@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const urlSchema = new mongoose.Schema({
     shortId:{
@@ -12,7 +12,7 @@ const urlSchema = new mongoose.Schema({
     },
     visitHistory:[{timestamp:{ type: Number}}],
     createdBy:{
-        type:mongoose.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'users'
     }
 },

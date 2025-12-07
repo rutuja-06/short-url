@@ -1,5 +1,5 @@
-const User = require('../models/user');
 const {v4: uuidv4} = require('uuid');
+const User = require('../models/user');
 const {setUser} = require('../services/auth');
 
 async function handleUserSignup(req, res) {
@@ -9,7 +9,6 @@ async function handleUserSignup(req, res) {
         email,
         password
     });
-    // return res.render("home");
     return res.redirect("/");
 }
 async function handleUserLogin(req, res) {
@@ -30,5 +29,5 @@ async function handleUserLogin(req, res) {
 
 module.exports = {
     handleUserSignup,
-    handleUserLogin
+    handleUserLogin,
 }

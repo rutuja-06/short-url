@@ -37,7 +37,7 @@ app.get('/url/:shortId', async (req, res) => {
         visitHistory: { timeStamp: Date.now()},
     }});
     res.redirect(entry.redirectURL);
-})
+});
 
 app.listen(PORT, ()=> console.log(`Server Started at PORT ${PORT}`));
 // const server = http.createServer((req, res) => {
