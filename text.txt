@@ -4,3 +4,5 @@
 4. cookies - only used for desktop application
 5. toekn uses in both
 6. token is stored in - header/ authorization/ barere - token 
+7. Authentication- During login check this id is present in our database
+8. Authorization - After login check for accessing this page u have access
